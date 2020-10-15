@@ -48,7 +48,7 @@ async function createPreferenceCenterURL(data, context) {
         method: "POST",
         body: JSON.stringify({
           organization_id: config.organizationId,
-          organization_user_id: context.auth.token.email, // Organization user ID (usually either context.auth.token.email or context.auth.uid)
+          organization_user_id: context.auth.token.email, // Organization user ID (usually either `context.auth.token.email` or `context.auth.uid`)
           lifetime: 3600,
         }),
         headers: {
