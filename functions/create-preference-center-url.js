@@ -59,9 +59,7 @@ async function createPreferenceCenterURL(data, context) {
     )
   ).json();
 
-  return {
-    url: `${config.preferenceCenterURL}?token=${consentToken.id_token}`,
-  };
+  return `${config.preferenceCenterURL}?token=${consentToken.id_token}`;
 }
 
 module.exports = createPreferenceCenterURL;

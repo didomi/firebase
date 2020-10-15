@@ -54,7 +54,5 @@ test("returns a Preference Center URL with a token", async () => {
         },
       }
     )
-  ).resolves.toEqual({
-    url: "<https://privacy.company.com/>?token=consent_token",
-  });
+  ).resolves.toEqual("<https://privacy.company.com/>?token=consent_token");
 });
