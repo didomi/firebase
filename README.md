@@ -6,6 +6,15 @@ We assume that you are familiar with configuring and deploying Firebase Cloud Fu
 
 ## Functions
 
+### Create a consent event
+
+The `createConsentEvent`([functions/create-consent-event.js](functions/create-consent-event.js)>) function uses the Didomi API to create a consent event and store a consent update for a user.
+
+The function uses the user email from Firebase Authentication by default as the organization user ID to associate with the event.  
+Update the function code to use another identifier.
+
+See <https://developers.didomi.io/api/consents/events> for more information on consent events.
+
 ### Create a Preference Center URL
 
 The `createPreferenceCenterURL`([functions/create-preference-center-url.js](functions/create-preference-center-url.js)>) function uses the Didomi API to create an authenticated Preference Center URL.  
